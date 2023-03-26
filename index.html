@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2</title>
+    <link href="/style/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header
+      class="navbar navbar-dark sticky-top bg-pr p-3 flex-md-nowrap p-0 shadow"
+    >
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"
+        >CKEditor Ecosystem Documentation</a
+      >
+      <button
+        class="navbar-toggler position-absolute d-md-none collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <input
+        class="form-control form-control-dark w-25 rounded-4 border-0"
+        type="text"
+        placeholder="Search in CKEditor 5"
+        aria-label="Search"
+      />
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img
+            src="/assets/logo.svg"
+            alt="Logo"
+            width="30"
+            class="d-inline-block align-text-top"
+          />
+          CKEditor 5</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                >Getting started</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Updating</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Framework</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Api</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link menu-github-link"
+                title="CKEditor 5 on GitHub"
+                target="_blank"
+                href="https://github.com/ckeditor/ckeditor5"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav
+          id="sidebarMenu"
+          class="col-md-3 col-lg-2 d-md-block bg-body-tertiary sidebar collapse"
+        >
+          <div class="position-sticky pt-3 sidebar-sticky">
+            <h6
+              class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary"
+            >
+              <span> <i class="bi bi-folder2 px-2"> </i>Predefined builds</span>
+              <a class="link-secondary" href="#" aria-label="Add a new report">
+                <span
+                  data-feather="plus-circle"
+                  class="align-text-bottom"
+                ></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mx-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <span data-feather="home" class="align-text-bottom"></span>
+                  <img
+                    width="17"
+                    class="sidenav-img"
+                    src="https://ckeditor.com/docs/assets/2.3.1/img/book.svg"
+                    alt="guide"
+                  />Classic editor
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  href="https://ckeditor.com/docs/ckeditor5/latest/examples/builds/inline-editor.html"
+                >
+                  <span data-feather="file" class="align-text-bottom"></span>
+                  <img
+                    width="17"
+                    class="sidenav-img"
+                    src="https://ckeditor.com/docs/assets/2.3.1/img/book.svg"
+                    alt="guide"
+                  />
+                  Inline editor
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                  <span
+                    data-feather="shopping-cart"
+                    class="align-text-bottom"
+                  ></span>
+                  <img
+                    width="17"
+                    class="sidenav-img"
+                    src="https://ckeditor.com/docs/assets/2.3.1/img/book.svg"
+                    alt="guide"
+                  />
+                  Ballon editor
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                  <span data-feather="users" class="align-text-bottom"></span>
+                  <img
+                    width="17"
+                    class="sidenav-img"
+                    src="https://ckeditor.com/docs/assets/2.3.1/img/book.svg"
+                    alt="guide"
+                  />
+                  Ballon block editor
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                  <span
+                    data-feather="bar-chart-2"
+                    class="align-text-bottom"
+                  ></span>
+                  <img
+                    width="17"
+                    class="sidenav-img"
+                    src="https://ckeditor.com/docs/assets/2.3.1/img/book.svg"
+                    alt="guide"
+                  />
+                  Document editor
+                </a>
+              </li>
+            </ul>
+
+            <h6
+              class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary"
+            >
+              <span> <i class="bi bi-folder2 px-2"> </i> Custom builds</span>
+              <a class="link-secondary" href="#" aria-label="Add a new report">
+                <span
+                  data-feather="plus-circle"
+                  class="align-text-bottom"
+                ></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2 mx-3">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">
+                  <span
+                    data-feather="file-text"
+                    class="align-text-bottom"
+                  ></span>
+                  <img
+                    width="17"
+                    class="sidenav-img"
+                    src="https://ckeditor.com/docs/assets/2.3.1/img/book.svg"
+                    alt="guide"
+                  />
+                  Full-featured editor
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="col-md-9 w-50 px-5 mx-5 my-4 col-lg-10 px-md-4">
+          <div class="container px-5">
+            <div
+              class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3"
+            >
+              <h1 class="main__content-title">
+                <img
+                  src="https://ckeditor.com/docs/assets/2.3.1/img/book.svg"
+                  alt="guide"
+                />
+                Classic editor
+              </h1>
+            </div>
+            <p>
+              <a
+                style="text-decoration: none"
+                href="https://ckeditor.com/docs/ckeditor5/latest/installation/getting-started/predefined-builds.html#classic-editor"
+              >
+                Classic editor</a
+              >
+              shows a boxed editing area with a toolbar, placed in a specific
+              position on the page.
+            </p>
+            <div id="editor">
+              <div class="ck ck-editor__main" role="presentation">
+                <div
+                  class="ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred"
+                  lang="en"
+                  dir="ltr"
+                  role="textbox"
+                  aria-label="Editor editing area: main"
+                  contenteditable="true"
+                  draggable="true"
+                >
+                  <h2>The three greatest things you learn from traveling</h2>
+                  <p>
+                    Like all the great things on earth traveling teaches us by
+                    example. Here are some of the most precious lessons I’ve
+                    learned over the years of traveling.
+                  </p>
+                  <figure
+                    class="image ck-widget image-style-side ck-widget_selected"
+                    contenteditable="false"
+                  >
+                    <img
+                      src="https://ckeditor.com/docs/ckeditor5/latest/assets/img/volcano.jpg"
+                      alt="A lone wanderer looking at Mount Bromo volcano in Indonesia."
+                      srcset="
+                        https://ckeditor.com/docs/ckeditor5/latest/assets/img/volcano.jpg,
+                        https://ckeditor.com/docs/ckeditor5/latest/assets/img/volcano_2x.jpg 2x
+                      "
+                      sizes="100vw"
+                    />
+                    <figcaption
+                      class="ck-editor__editable ck-editor__nested-editable"
+                      data-placeholder="Enter image caption"
+                      role="textbox"
+                      aria-label="Caption for image: A lone wanderer looking at Mount Bromo volcano in Indonesia."
+                      contenteditable="true"
+                    >
+                      Leaving your comfort zone might lead you to such beautiful
+                      sceneries like this one.
+                    </figcaption>
+                    <div class="ck ck-reset_all ck-widget__type-around">
+                      <div
+                        class="ck ck-widget__type-around__button ck-widget__type-around__button_before"
+                        title="Insert paragraph before block"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 10 8"
+                        >
+                          <path
+                            d="M9.055.263v3.972h-6.77M1 4.216l2-2.038m-2 2 2 2.038"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div
+                        class="ck ck-widget__type-around__button ck-widget__type-around__button_after"
+                        title="Insert paragraph after block"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 10 8"
+                        >
+                          <path
+                            d="M9.055.263v3.972h-6.77M1 4.216l2-2.038m-2 2 2 2.038"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="ck ck-widget__type-around__fake-caret"></div>
+                    </div>
+                  </figure>
+                  <h3>Appreciation of diversity</h3>
+                  <p>
+                    Getting used to an entirely different culture can be
+                    challenging. While it’s also nice to learn about cultures
+                    online or from books, nothing comes close to experiencing
+                    cultural diversity in person. You learn to appreciate each
+                    and every single one of the differences while you become
+                    more culturally fluid.
+                  </p>
+                  <blockquote>
+                    <p>
+                      The real voyage of discovery consists not in seeking new
+                      landscapes, but having new eyes.
+                    </p>
+                    <p><strong>Marcel Proust</strong></p>
+                  </blockquote>
+                  <h3>Improvisation</h3>
+                  <p>
+                    Life doesn't allow us to execute every single plan
+                    perfectly. This especially seems to be the case when you
+                    travel. You plan it down to every minute with a big
+                    checklist; but when it comes to executing it, something
+                    always comes up and you’re left with your improvising
+                    skills. You learn to adapt as you go. Here’s how my travel
+                    checklist looks now:
+                  </p>
+                  <ul>
+                    <li>buy the ticket</li>
+                    <li>start your adventure</li>
+                  </ul>
+                  <figure
+                    class="image ck-widget image-style-side ck-widget_selected"
+                    contenteditable="false"
+                  >
+                    <img
+                      src="https://ckeditor.com/docs/ckeditor5/latest/assets/img/umbrellas.jpg"
+                      alt="Three Monks walking on ancient temple."
+                      srcset="
+                        https://ckeditor.com/docs/ckeditor5/latest/assets/img/umbrellas.jpg,
+                        https://ckeditor.com/docs/ckeditor5/latest/assets/img/umbrellas_2x.jpg 2x
+                      "
+                      sizes="100vw"
+                    />
+                    <figcaption
+                      class="ck-editor__editable ck-editor__nested-editable"
+                      data-placeholder="Enter image caption"
+                      role="textbox"
+                      aria-label="Caption for image: Three Monks walking on ancient temple."
+                      contenteditable="true"
+                    >
+                      Leaving your comfort zone might lead you to such beautiful
+                      sceneries like this one.
+                    </figcaption>
+                    <div class="ck ck-reset_all ck-widget__type-around">
+                      <div
+                        class="ck ck-widget__type-around__button ck-widget__type-around__button_before"
+                        title="Insert paragraph before block"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 10 8"
+                        >
+                          <path
+                            d="M9.055.263v3.972h-6.77M1 4.216l2-2.038m-2 2 2 2.038"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div
+                        class="ck ck-widget__type-around__button ck-widget__type-around__button_after"
+                        title="Insert paragraph after block"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 10 8"
+                        >
+                          <path
+                            d="M9.055.263v3.972h-6.77M1 4.216l2-2.038m-2 2 2 2.038"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="ck ck-widget__type-around__fake-caret"></div>
+                    </div>
+                  </figure>
+                  <h3>Confidence</h3>
+                  <p>
+                    Going to a new place can be quite terrifying. While change
+                    and uncertainty make us scared, traveling teaches us how
+                    ridiculous it is to be afraid of something before it
+                    happens. The moment you face your fear and see there was
+                    nothing to be afraid of, is the moment you discover bliss.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 mb-3">
+              <p class="h4">Editor example configuration</p>
+              <hr />
+              <p>
+                Check out the
+                <a
+                  style="text-decoration: none"
+                  href="https://ckeditor.com/docs/ckeditor5/latest/installation/getting-started/predefined-builds.html#installation-example"
+                  >Quick start</a
+                >
+                guide to learn more about implementing this kind of editor. You
+                will find implementation steps there. You can see this example
+                editor’s code below.
+              </p>
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      View editor configuration script
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body bg-light">
+                      <code class="bg-dark">
+                        <pre>
+
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic/src/ckeditor';
+
+ClassicEditor
+    .create( document.querySelector( '#snippet-classic-editor' ), {
+        toolbar: {
+            items: [
+                'undo', 'redo',
+                '|', 'heading',
+                '|', 'bold', 'italic',
+                '|', 'link', 'uploadImage', 'insertTable', 'mediaEmbed',
+                '|', 'bulletedList', 'numberedList', 'outdent', 'indent'
+            ]
+        },
+        cloudServices: {
+            // All predefined builds include the Easy Image feature.
+            // Provide correct configuration values to use it.
+            tokenUrl: 'https://example.com/cs-token-endpoint',
+            uploadUrl: 'https://your-organization-id.cke-cs.com/easyimage/upload/'
+            // Read more about Easy Image - https://ckeditor.com/docs/ckeditor5/latest/features/images/image-upload/easy-image.html.
+            // For other image upload methods see the guide - https://ckeditor.com/docs/ckeditor5/latest/features/images/image-upload/image-upload.html.
+        }
+    } )
+    .then( editor => {
+        window.editor = editor;
+    } )
+    .catch( err => {
+        console.error( err );
+    } );
+
+
+                        </pre>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      View editor content listing
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <code>
+                        &lt;div id=&quot;snippet-classic-editor&quot;&gt;
+                        <section>content is inserted here.</section>
+                        &lt;/div&gt;
+                      </code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+        console.error(error);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+
+
+.main__content-title {
+    display: inline-block;
+    font-size: 2.36em;
+    font-weight:300;
+    line-height: 1.33em;
+}
+
+.main__content-title img {
+    height: 1.1em;
+    vertical-align: middle;
+    position: relative;
+    top: -0.1em;
+    margin-right: .5em;
+}
+
+ a.menu-github-link svg {
+    fill: currentColor;
+    width: 30px;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.sidenav-img img {
+    height: 1.1em;
+    vertical-align: middle;
+    position: relative;
+    top: -0.1em;
+    margin-right: .5em;
+}
+
+
+.bg-pr {
+    background-color: #3E59AD !important;
+}
+
+
+.main__content-title img {
+    max-width: 760px;
+}
